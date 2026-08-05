@@ -1,0 +1,107 @@
+# The Site Configuration
+# 참고: https://chirpy.cotes.page/posts/getting-started/
+
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: 이름을 적어주세요의 개발 기록 # 사이트 상단 타이틀 - 원하는 문구로 수정하세요
+
+tagline: 부트캠프에서 공부한 기술과 프로젝트를 기록합니다 # 부제목
+
+description: >- # SEO 및 RSS 피드에 사용됩니다
+  기술 스터디와 프로젝트 회고, 학업 정리 노트를 모아둔 개인 블로그입니다.
+
+# GitHub Pages로 배포한다면 'https://아이디.github.io' 형태가 됩니다. (마지막 '/' 없이)
+url: "https://your-github-id.github.io"
+
+github:
+  username: your-github-id # 본인 GitHub 아이디로 변경
+
+twitter:
+  username: # 사용하지 않으면 비워두세요
+
+social:
+  name: 본인 이름
+  email: iam.eighth.remnant@gmail.com
+  links:
+    - https://github.com/your-github-id
+
+theme_mode: # 비워두면 시스템 설정을 따름 (light / dark 선택 가능)
+
+toc: true
+
+comments:
+  provider: # 필요하면 disqus / utterances / giscus 중 선택 후 설정
+
+paginate: 10
+
+baseurl: ""
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
