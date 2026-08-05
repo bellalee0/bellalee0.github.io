@@ -28,7 +28,7 @@ social:
   links:
     - https://github.com/your-github-id
 
-avatar: /assets/img/avatar.png
+avatar: /avatar.png
 
 theme_mode: # 비워두면 시스템 설정을 따름 (light / dark 선택 가능)
 
