@@ -1,0 +1,86 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+  );
+
+@use 'main
+  {%- if jekyll.environment == 'production' -%}
+.bundle
+{%- endif -%}
+';
+
+/* Natural Palette theme: #88B04B / #87966B / #F6FBEC / #F6EDD9 */
+
+html:not([data-mode='dark']) {
+  --main-bg: #f6fbec;
+  --main-border-color: #f6edd9;
+  --mask-bg: #d9e4c8;
+  --link-color: #5c7a34;
+  --link-underline-color: #88b04b;
+  --checkbox-checked-color: #88b04b;
+  --clipboard-checked-color: #88b04b;
+  --toc-highlight: #5c7a34;
+  --btn-share-hover-color: #88b04b;
+  --site-title-color: #5c7a34;
+  --site-subtitle-color: #87966b;
+  --sidebar-bg: #f6fbec;
+  --sidebar-border-color: #f6edd9;
+  --sidebar-muted-color: #87966b;
+  --sidebar-active-color: #5c7a34;
+  --sidebar-hover-bg: rgb(136 176 75 / 15%);
+  --sidebar-btn-bg: #ffffff;
+  --avatar-border-color: #f6edd9;
+  --topbar-bg: rgb(246 251 236 / 75%);
+  --card-bg: #ffffff;
+  --card-hover-bg: #f6fbec;
+  --btn-paginator-hover-color: #f6fbec;
+  --tag-border: #87966b;
+  --tag-hover: #f6edd9;
+  --search-tag-bg: #f6fbec;
+  --categories-icon-hover-color: #5c7a34;
+  --categories-hover-bg: #f6edd9;
+  --prompt-tip-bg: rgb(136 176 75 / 15%);
+  --prompt-tip-icon-color: #5c7a34;
+  --highlight-bg-color: #f6fbec;
+  --language-border-color: #f6edd9;
+  --btn-backtotop-color: #87966b;
+  --btn-backtotop-border-color: #f6edd9;
+}
+
+html[data-mode='dark'] {
+  --main-bg: #1a1f16;
+  --main-border-color: #2a3324;
+  --mask-bg: #3d4a34;
+  --link-color: #a3c46c;
+  --link-underline-color: #6f8f49;
+  --checkbox-checked-color: #a3c46c;
+  --clipboard-checked-color: #a3c46c;
+  --toc-highlight: #a3c46c;
+  --btn-share-hover-color: #a3c46c;
+  --site-title-color: #b7d08c;
+  --site-subtitle-color: #9db07a;
+  --sidebar-bg: #171b13;
+  --sidebar-border-color: #2a3324;
+  --sidebar-muted-color: #9db07a;
+  --sidebar-active-color: #cfe3a8;
+  --sidebar-hover-bg: rgb(136 176 75 / 14%);
+  --sidebar-btn-bg: #202619;
+  --avatar-border-color: #556b3a;
+  --topbar-bg: rgb(23 27 19 / 70%);
+  --card-bg: #1e2418;
+  --card-hover-bg: #26301f;
+  --btn-paginator-hover-color: #26301f;
+  --tag-border: #4d5c3f;
+  --tag-hover: #2a3324;
+  --search-tag-bg: #202619;
+  --categories-icon-hover-color: #cfe3a8;
+  --categories-hover-bg: #2a3324;
+  --prompt-tip-bg: rgb(136 176 75 / 18%);
+  --prompt-tip-icon-color: #a3c46c;
+  --highlight-bg-color: #171b13;
+  --language-border-color: #2a3324;
+  --btn-backtotop-color: #9db07a;
+  --btn-backtotop-border-color: #2a3324;
+}
