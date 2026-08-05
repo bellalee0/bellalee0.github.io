@@ -14,6 +14,7 @@
 /* Natural Palette theme: beige base + green accents/hover */
 
 html:not([data-bs-theme='dark']) {
+    --build-marker-v12: 1;
   --main-bg: #f6f0e1 !important;
   --main-border-color: #e6dcc4 !important;
   --mask-bg: #e6dcc4 !important;
