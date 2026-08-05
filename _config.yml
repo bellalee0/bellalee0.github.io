@@ -6,9 +6,9 @@ theme: jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 
-title: 이름을 적어주세요의 개발 기록 # 사이트 상단 타이틀 - 원하는 문구로 수정하세요
+title: 이서연의 개발 기록
 
-tagline: 부트캠프에서 공부한 기술과 프로젝트를 기록합니다 # 부제목
+tagline: 개발자를 꿈꾸는 대학생의 학습 내용을 기록합니다
 
 description: >- # SEO 및 RSS 피드에 사용됩니다
   기술 스터디와 프로젝트 회고, 학업 정리 노트를 모아둔 개인 블로그입니다.
@@ -27,6 +27,8 @@ social:
   email: iam.eighth.remnant@gmail.com
   links:
     - https://github.com/your-github-id
+
+avatar: /assets/img/avatar.png
 
 theme_mode: # 비워두면 시스템 설정을 따름 (light / dark 선택 가능)
 
